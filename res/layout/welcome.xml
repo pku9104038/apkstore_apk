@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayoutGrid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.gesture.GestureOverlayView>
+
+    <ImageView
+        android:id="@+id/imageViewWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textViewAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/title_main"
+                android:textSize="36dp" />
+
+            <ImageView
+                android:id="@+id/imageViewItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/textViewAppName"
+                android:layout_centerInParent="false"
+                android:layout_toLeftOf="@id/textViewAppName"
+                android:src="@drawable/item"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textViewMoreService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAppName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:text="@string/moreserviceforyou"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/title_main" />
+
+            <TextView
+                android:id="@+id/textViewCallService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:text="@string/servicenumber"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/widget_text"
+                android:background="@drawable/textview_bg_selector" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewFlying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item"
+        android:visibility="visible" />
+
+</FrameLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="#CCCCCC" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_title" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="应用程序下线"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/text_shadow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayoutTitle"
+            android:background="@color/bg_light_gray"
+            android:scaleType="fitXY"
+            android:src="@drawable/separator"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewSeparator" >
+
+            <ImageView
+                android:id="@+id/imageViewApp"
+                android:layout_width="@dimen/app_icon_width"
+                android:layout_height="@dimen/app_icon_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textViewApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_medium"
+                android:layout_toRightOf="@id/imageViewApp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/widget_text" />
+
+            <TextView
+                android:id="@+id/textViewVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewApp"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_toRightOf="@id/imageViewApp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/phicomm_text" />
+
+            <TextView
+                android:id="@+id/textViewSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewApp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:text="M"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/phicomm_text" />
+
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:id="@+id/relativeLayoutAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/relativeLayoutApp"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            >
+
+           <TextView
+               android:id="@+id/textViewAccount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:text="帐号："
+               android:textAppearance="?android:attr/textAppearanceLarge" />
+
+           <EditText
+               android:id="@+id/editTextAccount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@id/textViewAccount" >
+
+               <requestFocus />
+           </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutAccount"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            >
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="密码："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+           <EditText
+               android:id="@+id/editTextPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@id/textViewPassword"
+               android:ems="10"
+               android:inputType="textPassword" >
+
+           </EditText>
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayoutPassword"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            >
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/text_label" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_submit"
+                android:textColor="@color/text_label" />
+        </LinearLayout>
+    </RelativeLayout>
+
+ 
+
+</RelativeLayout>

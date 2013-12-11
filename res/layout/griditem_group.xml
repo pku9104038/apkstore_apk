@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+ 
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutIcon"
+        android:layout_width="@dimen/app_icon_width"
+        android:layout_height="@dimen/app_icon_height"
+        android:layout_below="@id/textViewPadding"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_dummyicon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageViewMarker"
+                android:layout_width="@dimen/marker_width"
+                android:layout_height="@dimen/marker_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_download" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayoutIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/grid_label_gap"
+        android:layout_marginRight="@dimen/grid_label_gap"
+        android:ellipsize="end"
+        android:shadowColor="#000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="3.0"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+
+</LinearLayout>

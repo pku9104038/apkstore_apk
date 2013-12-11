@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup1"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup1"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/textViewGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup1"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="0.0"
+                    android:shadowDy="0.0"
+                    android:shadowRadius="3.0"
+                    android:text="@string/group_1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/widget_text" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup2"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup2"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/textViewGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup2"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_2"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup3"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup3"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup3"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_3"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup4"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup4"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup4"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_4"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+         >
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup5"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup5"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup5"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_5"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup6"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup6"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup6"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_6"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup7"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup7"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup7"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_7"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup8"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup8"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup8"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_8"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+        
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup9"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup9"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup9"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_9"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup10"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup10"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup10"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_10"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup11"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup11"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup11"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_11"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup12"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup12"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup12"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_12"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+        
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup13"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup13"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup13"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_13"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup14"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup14"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup14"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_14"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup15"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup15"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup15"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_15"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutGroup16"
+                 android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageViewGroup16"
+                    android:layout_width="@dimen/widget_icon_width"
+                    android:layout_height="@dimen/widget_icon_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textViewGroup16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewGroup16"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="@color/text_shadow"
+                	android:shadowDx="0.0"
+                	android:shadowDy="0.0"
+                	android:shadowRadius="3.0"
+                	android:text="@string/group_16"
+                	android:textColor="@color/widget_text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+        
+</LinearLayout>

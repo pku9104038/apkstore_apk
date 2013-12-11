@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="group_icon_width">72dip</dimen>
+    <dimen name="group_icon_height">72dip</dimen>
+    
+    <dimen name="widget_icon_width">72dip</dimen>
+    <dimen name="widget_icon_height">72dip</dimen>
+    
+</resources>

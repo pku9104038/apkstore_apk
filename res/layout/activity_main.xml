@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageViewWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:scaleType="center" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3" >
+    </GridView>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </android.gesture.GestureOverlayView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="true"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="3.0"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/widget_text" />
+
+            <ImageButton
+                android:id="@+id/imageButtonLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/textViewTitle"
+                android:background="@drawable/arrow_left"
+                android:src="@drawable/arrow_left"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/imageButtonRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTitle"
+                android:background="@drawable/arrow_right"
+                android:src="@drawable/arrow_right"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageButtonMy"
+                android:layout_width="@dimen/title_icon_width"
+                android:layout_height="@dimen/title_icon_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:src="@drawable/btn_my"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageButtonExit"
+                android:layout_width="@dimen/title_icon_width"
+                android:layout_height="@dimen/title_icon_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:src="@drawable/btn_exit"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/relativeLayoutBar"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup1"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group1" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="false"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup2"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group2" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup2"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup3"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group3" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup3"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup4"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group4" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup4"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup5"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group5" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup5"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup6"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group6" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup6"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_6"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+
+                    
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup7"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group7" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup7"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_7"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup8"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group8" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup8"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_8"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup9"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group9" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup9"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_9"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup10"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group10" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup10"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_10"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup11"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group11" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup11"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_11"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup12"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group12" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup12"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_12"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRow4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup13"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group13" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup13"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_13"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup14"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group14" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup14"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_14"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup15"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group15" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup15"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_15"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutGroup16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/FramLayoutGroup16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/imageViewGroup16"
+                            android:layout_width="@dimen/group_icon_width"
+                            android:layout_height="@dimen/group_icon_height"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_group16" />
+
+                        <ImageView
+                            android:id="@+id/imageViewGroupMarker16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/marker_count_n" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGroup16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/FramLayoutGroup16"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="3.0"
+                        android:text="@string/group_16"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/widget_text" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewFlyingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item" />
+
+</FrameLayout>

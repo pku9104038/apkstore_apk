@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutWidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRow1"
+        style="@style/widget_row">
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup1"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup1"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup1"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group1" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker1"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup1"
+	                android:layout_below="@id/FramLayoutGroup1"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_1"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup2"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup2"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup2"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group2" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker2"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup2"
+	                android:layout_below="@id/FramLayoutGroup2"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_2"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup3"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup3"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup3"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group3" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker3"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup3"
+	                android:layout_below="@id/FramLayoutGroup3"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_3"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup4"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup4"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup4"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group4" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker4"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup4"
+	                android:layout_below="@id/FramLayoutGroup4"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_4"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRow2"
+        style="@style/widget_row">
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup5"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup5"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup5"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group5" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker5"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup5"
+	                android:layout_below="@id/FramLayoutGroup5"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_5"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup6"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup6"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup6"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group6" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker6"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup6"
+	                android:layout_below="@id/FramLayoutGroup6"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_6"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup7"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup7"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup7"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group7" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker7"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup7"
+	                android:layout_below="@id/FramLayoutGroup7"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_7"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup8"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup8"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup8"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group8" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker8"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup8"
+	                android:layout_below="@id/FramLayoutGroup8"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_8"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutRow3"
+        style="@style/widget_row">
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup9"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup9"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup9"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group9" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker9"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup9"
+	                android:layout_below="@id/FramLayoutGroup9"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_9"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup10"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup10"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup10"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group10" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker10"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup10"
+	                android:layout_below="@id/FramLayoutGroup10"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_10"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup11"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup11"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup11"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group11" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker11"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup11"
+	                android:layout_below="@id/FramLayoutGroup11"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_11"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup12"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup12"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup12"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group12" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker12"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup12"
+	                android:layout_below="@id/FramLayoutGroup12"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_12"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutRow4"
+        style="@style/widget_row">
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup13"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup13"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup13"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group13" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker13"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup1"
+	                android:layout_below="@id/FramLayoutGroup13"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_13"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup14"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup14"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup14"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group14" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker14"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup14"
+	                android:layout_below="@id/FramLayoutGroup14"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_14"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup15"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup15"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup15"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group15" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker15"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup15"
+	                android:layout_below="@id/FramLayoutGroup15"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_15"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+                        
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGroup16"
+            style="@style/widget_item_group"
+            >
+            
+            <RelativeLayout 
+                style="@style/widget_item"
+                >
+
+                <FrameLayout
+                    android:id="@+id/FramLayoutGroup16"
+		            style="@style/widget_icon_frame">
+		            
+                    <ImageView
+                        android:id="@+id/imageViewGroup16"
+                        style="@style/widget_icon"
+                        android:src="@drawable/ic_group16" />
+
+                    <ImageView
+                        android:id="@+id/imageViewGroupMarker16"
+                        style="@style/widget_marker" />
+                    
+                </FrameLayout>
+
+
+	            <TextView
+	                android:id="@+id/textViewGroup16"
+	                android:layout_below="@id/FramLayoutGroup16"
+	                style="@style/widget_label_text"
+	                android:text="@string/group_16"
+	                 />
+	            
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_btn_small">4dp</dimen>
+    <dimen name="group_icon_width">56dip</dimen>
+    <dimen name="group_icon_height">56dip</dimen>
+    <dimen name="group_icon_width_large">64dip</dimen>
+    <dimen name="group_icon_height_large">64dip</dimen>
+    <dimen name="title_icon_width">36dip</dimen>
+    <dimen name="title_icon_height">36dip</dimen>
+    <dimen name="titlebar_height">48dip</dimen>
+    <dimen name="app_icon_width">64dip</dimen>
+    <dimen name="app_icon_height">64dip</dimen>
+    <dimen name="marker_width">20dip</dimen>
+    <dimen name="marker_height">20dip</dimen>
+    <dimen name="label_width">72dip</dimen>
+    <dimen name="progressbar_width">240dip</dimen>
+    <dimen name="button_width">116dip</dimen>
+    <dimen name="download_label_width">176dip</dimen>
+    <dimen name="grid_label_gap">2dip</dimen>
+    <dimen name="bar_height">56dip</dimen>
+    <dimen name="focus_height">16dip</dimen>
+    <dimen name="widget_icon_width">64dip</dimen>
+    <dimen name="widget_icon_height">64dip</dimen>
+    
+
+</resources>

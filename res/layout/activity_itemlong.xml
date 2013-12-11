@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/bg_white"
+        android:padding="@dimen/padding_medium" >
+
+        <ImageView
+            android:id="@+id/imageViewApp"
+            android:layout_width="@dimen/app_icon_width"
+            android:layout_height="@dimen/app_icon_height"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textViewApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageViewApp"
+            android:layout_toRightOf="@id/imageViewApp"
+            android:maxWidth="@dimen/download_label_width"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_label"
+            android:textColorHint="@color/text_label" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progressbar_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewApp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonComment"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/progressBar"
+            android:text="@string/btn_comment"
+            android:textColor="@color/text_label" />
+
+        <Button
+            android:id="@+id/buttonShare"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonComment"
+            android:layout_alignBottom="@+id/buttonComment"
+            android:layout_alignRight="@+id/progressBar"
+            android:text="@string/btn_share"
+            android:textColor="@color/text_label" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

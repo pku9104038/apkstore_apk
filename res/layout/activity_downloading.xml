@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_group" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_title"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="应用程序"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/text_shadow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayoutTitle"
+            android:background="@color/bg_light_gray"
+            android:scaleType="fitXY"
+            android:src="@drawable/separator"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewSeparator" >
+
+
+            <ImageView
+                android:id="@+id/imageViewApp"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_dummyicon" />
+
+            <TextView
+                android:id="@+id/textViewApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_medium"
+                android:layout_toRightOf="@id/imageViewApp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/widget_text" />
+
+            <TextView
+                android:id="@+id/textViewVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewApp"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_toRightOf="@id/imageViewApp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/phicomm_text" />
+
+            <TextView
+                android:id="@+id/textViewSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewApp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:text="M"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/phicomm_text" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayoutButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            
+            >
+
+                    
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium" />
+
+        
+           
+       <RelativeLayout
+            android:id="@+id/relativeLayoutGroupRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/progressBar"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium" >
+
+            <RadioGroup
+                android:id="@+id/radioGroupConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioWLANOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/wlanonline"
+                    android:textColor="@color/phicomm_text" />
+
+                <RadioButton
+                    android:id="@+id/radioDataOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dataonline"
+                    android:textColor="@color/phicomm_text" />
+            </RadioGroup>
+        </RelativeLayout>
+ 
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/relativeLayoutGroupRadio"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium" >
+            
+            <Button
+                android:id="@+id/buttonBack"
+                style="@style/btn_normal"
+                android:text="@string/btn_back"
+                />
+            
+        	<Button
+                android:id="@+id/buttonDownload"
+                style="@style/btn_normal"
+                android:text="@string/btn_download"
+                />
+            
+            <Button
+                android:id="@+id/buttonCancel"
+                style="@style/btn_normal"
+                android:text="@string/btn_cancel"
+                />
+			
+            <Button
+                android:id="@+id/buttonInstall"
+                style="@style/btn_normal"
+                android:text="@string/btn_install"
+                />
+            
+            <Button
+                android:id="@+id/buttonLaunch"
+                style="@style/btn_normal"
+                android:text="@string/btn_launch"
+                />
+            
+            <Button
+                android:id="@+id/buttonUpgrade"
+                style="@style/btn_normal"
+                android:text="@string/btn_upgrade"
+                />
+            
+            <Button
+                android:id="@+id/buttonShare"
+                style="@style/btn_normal"
+                android:text="@string/btn_share"
+                />
+			
+			
+			
+			
+           </LinearLayout>
+            
+        
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayoutButtons"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayoutApp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_group"
+            android:visibility="invisible" />
+       
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/imageViewNotificationImage"
+        android:layout_width="@dimen/group_icon_width"
+        android:layout_height="@dimen/group_icon_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutNotifyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewNotificationImage"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_toRightOf="@+id/imageViewNotificationImage" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutNotifyNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+        	<TextView
+        	    android:id="@+id/textViewNotificationTime"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:text="2012-08-01"
+        	    android:textAppearance="?android:attr/textAppearanceSmall"
+        	    android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewNotificationNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/textViewNotificationTime"
+                android:text="@string/notify_newversion"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewNotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/relativeLayoutNotifyNotes"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+            
+    </RelativeLayout>
+
+</RelativeLayout>

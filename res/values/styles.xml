@@ -1,0 +1,127 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.NoTitleBar" />
+    
+    <style name="activity_fade_in_fade_out">
+        <item name="@android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="@android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="@android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="@android:activityCloseExitAnimation">@android:anim/fade_out</item>
+        </style>
+        
+    <style name="activity_left_in_right_out" parent="@android:style/Animation.Activity" mce_bogus="1">
+		<item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+		<item name="android:activityOpenExitAnimation">@anim/push_right_out</item>
+		<item name="@android:activityCloseEnterAnimation">@anim/push_left_in</item>
+		<item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+		</style> 
+    
+    <style name="AnimationTheme" parent="android:Theme.Light.NoTitleBar" >
+        <!-- <item name="android:windowAnimationStyle">@style/activity_fade_in_fade_out</item> -->
+        <item name="android:windowAnimationStyle">@style/activity_fade_in_fade_out</item>
+        </style>
+
+    <style name="Transparent">
+       	<item name="android:windowBackground">@color/transparent_background</item>
+       	<item name="android:windowNoTitle">true</item>
+       	<item name="android:windowIsTranslucent">true</item>
+      
+	</style>
+    
+    <color name="text_shadow">#FFFFFF</color>
+    <color name="widget_text">#000000</color>
+    <color name="title_main">#FFFFFF</color>
+    <color name="tiltle_group">#FF0088</color>
+    <color name="group_neighbor">#AAAAAA</color>
+    <color name="text_label">#000000</color>
+    <color name="bg_light_gray">#DDDDDD</color>
+    <color name="bg_dark_gray">#BBBBBB</color>
+    <color name="transparent_background">#A0000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="phicomm_text">#000000</color>
+    <color name="phicomm_shadow">#FFFFFF</color>
+    
+    <color name="widget_label">#FFFFFF</color>
+    <color name="widget_label_shadow">#000000</color>
+    <color name="tab_label_normal">#FFFFFF</color>
+    <color name="tab_label_pressed">#888888</color>
+    
+    
+    <style name="widget_label_text">
+        
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+                        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#000000</item>
+        
+    	<item name="android:shadowDx">0.0</item>
+    	<item name="android:shadowDy">0.0</item>
+    	<item name="android:shadowRadius">3.0</item>
+        
+        <item name="android:textSize">14sp</item>
+    
+    </style>
+    
+    
+    
+    <style name="widget_icon">
+        <item name="android:layout_width">@dimen/widget_icon_width</item>
+        <item name="android:layout_height">@dimen/widget_icon_height</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    
+    <style name="widget_marker">
+        
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitEnd</item>
+  		<item name="android:visibility">gone</item>
+  		<item name="android:src">@drawable/marker_count_n</item>
+                        
+    </style>
+    <style name="widget_icon_frame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="widget_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="widget_item_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="widget_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="btn_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="tvbtn_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/padding_btn_small</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/btn_download_selector</item>
+    </style>
+    
+</resources>
